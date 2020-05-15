@@ -1,0 +1,176 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="flex-center">
+        <span class="profileButton">
+            <img src="img/user.svg" alt="">
+        </span>
+        <h2>Messages</h2>
+        <input type="checkbox" id="nav-toggle" hidden>
+
+        <!-- LEFT MENU -->
+        <nav class="nav">
+            <label for="nav-toggle" class="nav-toggle" onclick></label>
+            <div class="nav_header">
+                <h2>Account info</h2>
+            </div>
+            <div class="nav_menu_block">
+                <div class="nm_profile">
+                    <div class="nm_top flex">
+                        <div class="nm_avatar">
+                            <img src="img/avatar.png" alt="">
+                        </div>
+                        <div class="nm_info">
+                            <span>John Wick</span>
+                            <p>@johnwick_xxx</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav_menu_list">
+                <ul>
+                    <li>
+                        <span>
+                            <img src="img/rectangle.png" alt="">
+                        </span> 
+                        Item 1
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/rectangle.png" alt="">
+                        </span> 
+                        Item 2
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/rectangle.png" alt="">
+                        </span> 
+                        Item 3
+                    </li>
+                    <li>
+                        <span>
+                            <img src="img/rectangle.png" alt="">
+                        </span> 
+                        Item 4
+                    </li>
+                </ul>
+            </div>
+        </nav>
+         <!-- LEFT MENU -->
+
+         <!-- CONTENT FADER -->
+        <div class="mask-content"></div>
+    </header>
+    <!-- HEADER FIN -->
+
+    <section>
+        <div class="mainContainer">
+            <div class="messages_search">
+                <input type="search" placeholder="Search on messages">
+            </div>
+            <div class="messages_filters">
+                <ul class="flex-center">
+                    <span>Filter:</span>
+                    <li class="mf_active">All</li>
+                    <li>Unread</li>
+                    <li>Pending</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="mainContainer">
+            <div class="messages_container">
+                <div class="messages_item flex">
+                    <div class="mi_avatar">
+                        <img src="img/avatar.png" alt="">
+                    </div>
+                    <div class="mi_information flex-between">
+                        <div class="mi_left mi_msg">
+                            <span>John Wick</span>
+                            <p>New message</p>
+                        </div>
+                        <div class="mi_right">
+                            <span>+10$</span>
+                            <p>3d left</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages_item flex">
+                    <div class="mi_avatar">
+                        <img src="img/avatar.png" alt="">
+                    </div>
+                    <div class="mi_information flex-between">
+                        <div class="mi_left mi_service">
+                            <span>John Wick</span>
+                            <p>Birthday Congratulation</p>
+                        </div>
+                        <div class="mi_right">
+                            <span>+10$</span>
+                            <p>3d left</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages_item flex">
+                    <div class="mi_avatar">
+                        <img src="img/avatar.png" alt="">
+                    </div>
+                    <div class="mi_information flex-between">
+                        <div class="mi_left mi_msg mi_msg_black"> 
+                            <span>John Wick</span>
+                            <p>New message</p>
+                        </div>
+                        <div class="mi_right_msg">
+                            <span>19:35</span>
+                            <div class="mi_msg_counter">2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="msg_balance_btn flex-center">
+            <p>Balance: </p>
+            <span>200$</span>
+            <img src="img/balance_plus.svg" alt="">
+        </div>
+    </section>
+    <section>
+        <nav class="navigationBar">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="img/discover.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/search.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/messages-active.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="img/notification.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+</body>
+</html>
