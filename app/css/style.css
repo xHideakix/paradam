@@ -158,12 +158,17 @@ header h2{
     margin-top: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+#selectionItemOne {
+    margin-right: 5px;
 }
 
 .methodSelection a {
-    color: var(--darkus);
+    font-size: 16px;
     text-transform: uppercase;
+    color: var(--darkus);
 }
 
 .methodSelection a:hover,
@@ -172,6 +177,9 @@ header h2{
     text-decoration: none;
 }
 
+.activeClick {
+    border-color: var(--main-blue);
+}
 .activeSelection {
     display: inline-block;
     position: relative;
@@ -196,11 +204,23 @@ header h2{
     justify-content: center;
 }
 
+.phoneWrapper {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#phone {
+    width: 305px;
+}
+
 .loginBtn {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #fff;  
-    width: 300px;
+    color: #fff;
+    height: 100%;  
+    width: 305px;
     padding: 10px;
     font-weight: bold;
     border-radius: 7px;
@@ -259,15 +279,6 @@ header h2{
     border: 1px solid #E5E5E5;
     border-radius: 5px 0 0 5px;
     outline: none;
-}
-
-#phone {
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    border-radius: 0 5px 5px 0;
-    border-left: none;
-    border: 1px solid #E5E5E5;
 }
 
 .activeSelection a{
