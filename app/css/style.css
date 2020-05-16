@@ -197,11 +197,25 @@ header h2{
     background-color: var(--darkus);
 }
 
+
+
 .btnWrapper {
     margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.iti__selected-flag {
+    background-color: #FAFAFA;
+    color: var(--main-blue);
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.iti__selected-dial-code{
+    padding-right: 10px;
+    border-right: 1px solid #CCCCCC;
 }
 
 .phoneWrapper {
@@ -213,6 +227,17 @@ header h2{
 
 #phone {
     width: 305px;
+    border-radius: 5px;
+    background-color: #FAFAFA;
+    border-color: #CCCCCC;
+}
+
+.iti__arrow {
+    display: none;
+}
+
+.iti__selected-dial-code {
+    margin-right:5px;
 }
 
 .loginBtn {

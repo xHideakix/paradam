@@ -2,122 +2,128 @@
 <html class="no-js" lang="">
 
 <head>
-    <meta charset="utf-8">
-    <title>Авторизация</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Авторизация</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico in the root directory -->
+	<!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/flickity.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="build/css/intlTelInput.css">
-    <link rel="stylesheet" href="build/css/demo.css">
-    <meta name="theme-color" content="#fafafa">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/flickity.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="build/css/intlTelInput.css">
+	<link rel="stylesheet" href="build/css/demo.css">
+	<meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-<!--[if IE]>
+	<!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
-    <!-- HEADER -->
-    <header class="flex-center">
-    <div class="profileButton">
-        <img src="img/user.svg" alt="back_arrow">
-    </div>
-      <h2>Авторизоваться</h2>
-  </header>
-  <!-- HEADER FIN -->
+	<!-- Add your site or application content here -->
+	<!-- HEADER -->
+	<header class="flex-center">
+		<div class="profileButton">
+			<img src="img/user.svg" alt="back_arrow">
+		</div>
+		<h2>Авторизоваться</h2>
+	</header>
+	<!-- HEADER FIN -->
 
-  <!-- MAIN CONTAINER -->
-  <section>
-    <div class="mainContainer">
-    <div class="methodSelection form-group">
-        <a href="#" id="selectionItemOne" class="activeSelection">Код в телеграм</a>
-        <a href="#" id="selectionItemTwo">Звонок на номер</a>
-    </div>
-    </div>
-    <form action="#" method="POST" id="form-signup"> 
-            <div class="phoneWrapper">
-            <input id="phone" type="tel">
-            </div>      
-            <div class="btnWrapper">
-                <input type="button" value="Вход" class="loginBtn form-group">
-            </div>
-        </div>
-    </form>
-  </section>
+	<!-- MAIN CONTAINER -->
+	<section>
+		<div class="mainContainer">
+			<div class="methodSelection form-group">
+				<a href="#" id="selectionItemOne" class="activeSelection">Код в телеграм</a>
+				<a href="#" id="selectionItemTwo">Звонок на номер</a>
+			</div>
+		</div>
+		<form action="#" method="POST" id="form-signup">
+			<div class="phoneWrapper">
+				<input id="phone" type="tel">
+			</div>
+			<div class="btnWrapper">
+				<input type="button" value="Вход" class="loginBtn form-group">
+			</div>
+			</div>
+		</form>
+	</section>
 
-  <!-- MAIN FIN -->
+	<!-- MAIN FIN -->
 
-    <!-- NAVIGATION CONTAINER -->
-    <section>
-        <nav class="navigationBar">
-            <ul>
-                <li>
-                    <a href="">
-                        <img src="img/discover.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="img/search.svg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img src="img/messages.svg" alt="">
-                    </a>
-                </li>
-              <li>
-                  <a href="">
-                      <img src="img/notification.svg" alt="">
-                  </a>
-              </li>
-          </ul>
-      </nav>
-    </section>
-    <!-- NAVIGATION CONTAINER -->
+	<!-- NAVIGATION CONTAINER -->
+	<section>
+		<nav class="navigationBar">
+			<ul>
+				<li>
+					<a href="">
+						<img src="img/discover.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/search.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/messages.svg" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="img/notification.svg" alt="">
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+	<!-- NAVIGATION CONTAINER -->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="build/js/intlTelInput.js"></script>
-  <script>
-    $("#phone").intlTelInput({
-      allowExtensions: true,
-      //autoFormat: false,
-      //autoHideDialCode: false,
-      //autoPlaceholder: false,
-      //defaultCountry: "auto",
-      //geoIpLookup: function(callback) {
-      //   $.get('http://ipinfo.io', function() {}, "jsonp").always(function(resp) {
-      //     var countryCode = (resp && resp.country) ? resp.country : "";
-      //     callback(countryCode);
-      //   });
-      // },
-      //nationalMode: false,
-      //numberType: "MOBILE",
-      //onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
-      //preferredCountries: ['cn', 'jp'],
-      utilsScript: "lib/libphonenumber/build/utils.js"
-    });
-  </script>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/vendor/modernizr-3.8.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+		crossorigin="anonymous"></script>
+	<script> window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+	<script src="build/js/intlTelInput.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script>
+		$("#phone").intlTelInput({
+			allowExtensions: true,
+			allowDropdown: true,
+			autoHideDialCode: true,
+			separateDialCode: true,
+			autoPlaceholder: "polite",
+			customPlaceholder: null,
+			geoIpLookup: function (callback) {
+				$.get('http://ipinfo.io', function () { }, "jsonp").always(function (resp) {
+					var countryCode = (resp && resp.country) ? resp.country : "";
+					callback(countryCode);
+				});
+			},
+			numberType: "MOBILE",
+			preferredCountries: ['cn', 'jp'],
+			utilsScript: "lib/libphonenumber/build/utils.js"
+		});
+	</script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 </html>
