@@ -177,7 +177,7 @@ header h2{
     text-decoration: none;
 }
 
-.activeClick {
+.activeArea {
     border-color: var(--main-blue);
 }
 .activeSelection {
@@ -189,11 +189,11 @@ header h2{
 .activeSelection::after {
     display: block;
     left: 0;
-    top: 20px;
+    bottom: -8px;
     position: absolute;
     content: "";
     width: 100%;
-    height: 2px;
+    height: 1px;
     background-color: var(--darkus);
 }
 
@@ -211,6 +211,7 @@ header h2{
     color: var(--main-blue);
     font-size: 1em;
     font-weight: bolder;
+    border-radius: 15px;
 }
 
 .iti__selected-dial-code{
@@ -230,6 +231,10 @@ header h2{
     border-radius: 5px;
     background-color: #FAFAFA;
     border-color: #CCCCCC;
+}
+
+#phone:hover {
+    border-color: var(--main-blue);
 }
 
 .iti__arrow {
@@ -570,6 +575,7 @@ header h2{
 .navigationBar {
     position: fixed;
     bottom: 0;
+    right: 0;
     width: 100%;
     height: 51px;
     background: #fff;

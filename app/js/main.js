@@ -7,11 +7,4 @@ $( document ).ready(function() {
     $('#selectionItemOne').addClass("activeSelection");
     $('#selectionItemTwo').removeClass("activeSelection");
   });
-
-  $('#phone').on('click', () => {
-    $('#phone').addClass("activeClick");
-  })
-  $('#phone').on('mouseout', () => {
-    $('#phone').removeClass("activeClick");
-  })
 });

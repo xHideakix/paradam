@@ -72,6 +72,7 @@
 @media (max-width: 500px) {
 	.iti__country-list {
 		white-space: normal;
+		width: 305px;
 	}
 }
 .iti__flag-box {
