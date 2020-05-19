@@ -52,7 +52,7 @@
 }
 .iti__country-list {
 	position: absolute;
-	z-index: 2;
+	z-index: 100000;
 	list-style: none;
 	text-align: left;
 	padding: 0;
