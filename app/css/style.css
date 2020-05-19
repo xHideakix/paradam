@@ -162,7 +162,7 @@ header h2{
 }
 
 .methodSelection a {
-    font-size: 13px;
+    font-size: 1em;
     text-transform: uppercase;
     color: var(--darkus);
 }
